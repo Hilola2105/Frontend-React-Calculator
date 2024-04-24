@@ -1,0 +1,102 @@
+.App.calc {
+  font-size: 10px;
+  height: 100%;
+  grid-area: calcu;
+  color: var(--white);
+  background-color: var(--grey);
+  border: 5px solid var(--grey);
+  box-shadow: 0 0 15px var(--grey);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr);
+  grid-template-areas:
+    "scr scr scr scr"
+    "clr div mul min"
+    "one two three add"
+    "four five six add"
+    "seven eight nine eql"
+    "zero zero dot eql";
+}
+.App.calc .display {
+  grid-area: scr;
+}
+
+@media (min-width: 480px) {
+  .App.calc {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App.calc {
+    font-size: 8px;
+  }
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.eql {
+  grid-area: eql;
+}
+
+.div {
+  grid-area: div;
+}
+
+.mul {
+  grid-area: mul;
+}
+
+.add {
+  grid-area: add;
+}
+
+.min {
+  grid-area: min;
+}
+
+.clr {
+  grid-area: clr;
+}
